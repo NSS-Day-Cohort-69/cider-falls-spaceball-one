@@ -2,7 +2,8 @@ import {getParks, getGuests} from './script/database.js'
 
 const parks = getParks()
 const guests = getGuests()
-const displayPark = () => {
+
+export const displayPark = () => {
 let parksHTML = '<section class="park-card">'
 for(const park of parks) {
     parksHTML += `<div>
@@ -26,7 +27,7 @@ document.addEventListener(
                     guestCounter++
                 }
             }
-            window.alert(`There are ${guestCounter} guests in this are`)
+            window.alert(`There are ${guestCounter} guests in this area`)
         }
     }
 )
