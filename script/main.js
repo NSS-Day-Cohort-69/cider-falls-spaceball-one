@@ -1,0 +1,1 @@
+/* call each function that displays data to the browser with .querySelector innerHTML.*/
