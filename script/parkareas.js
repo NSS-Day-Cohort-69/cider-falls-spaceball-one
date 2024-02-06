@@ -1,9 +1,10 @@
 import {getParks, getGuests} from './script/database.js'
+import {displayServices} from './script/services.js'
 
 const parks = getParks()
 const guests = getGuests()
 
-export const displayPark = () => {
+export const displayParks = () => {
 let parksHTML = '<section class="park-card">'
 for(const park of parks) {
     parksHTML += `<div>
