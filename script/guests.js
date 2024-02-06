@@ -5,7 +5,7 @@ import { getGuests } from './scipt/database.js'
 
 const guests = getGuests()
 
-export const displayGuest = () => {
+export const displayGuests = () => {
     let guestHTML = "<ul>"
 
     for (const guest of guests) {
