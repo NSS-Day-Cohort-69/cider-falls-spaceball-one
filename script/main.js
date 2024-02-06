@@ -1,6 +1,6 @@
 
-import {displayParks} from './script/parkareas.js'
-import {displayGuests} from './script/guests.js'
+import {displayParks} from './parkareas.js'
+import {displayGuests} from './guests.js'
 
 const parentHTMLElement = document.querySelector(".park-cards")
 const parentHTMLElementTwo = document.querySelector(".guests")

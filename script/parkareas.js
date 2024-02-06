@@ -1,5 +1,5 @@
-import {getParks, getGuests} from './script/database.js'
-import {displayServices} from './script/services.js'
+import {getParks, getGuests} from './database.js'
+import {displayServices} from './services.js'
 
 const parks = getParks()
 const guests = getGuests()
