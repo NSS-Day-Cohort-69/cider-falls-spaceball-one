@@ -1,7 +1,7 @@
 /*loop through database.guest display guest.fullName
 functionName: displayGuest
 */
-import { getGuests } from './script/database.js'
+import { getGuests } from './database.js'
 
 const guests = getGuests()
 
