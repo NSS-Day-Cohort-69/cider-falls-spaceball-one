@@ -11,7 +11,7 @@ const servicesList=getServices();
 const parkAreaServicesList=getParkAreaServices();
 const parkAreaList=getParkAreas();
 
-const displayServices=(parkAreaId)=>{
+export const displayServices=(parkAreaId)=>{
     let serviceHTML="<ul>"
     
     for(const parkService of parkAreaServicesList){
