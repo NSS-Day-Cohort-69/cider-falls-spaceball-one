@@ -1,7 +1,7 @@
-import {getParks, getGuests} from './database.js'
+import {getParkAreas, getGuests} from './database.js'
 import {displayServices} from './services.js'
 
-const parks = getParks()
+const parks = getParkAreas()
 const guests = getGuests()
 
 export const displayParks = () => {
