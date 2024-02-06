@@ -7,7 +7,7 @@ const guests = getGuests()
 
 export const displayGuests = () => {
     let guestHTML = "<section>"
-    guestHTML = "<ul>"
+    guestHTML += "<ul>"
 
     for (const guest of guests) {
         guestHTML += `<li> ${guest.fullName} </li>`
