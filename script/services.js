@@ -28,19 +28,18 @@ export const displayServices=(parkAreaId)=>{
 document.addEventListener("click",(serviceClickEvent)=>{
     const serviceElement=serviceClickEvent.target;
     if(serviceElement.dataset.type==="service"){
-        let parkAreas=null
+        let parkAreaNames=""
         for(const parkAreaWithService of parkAreaServicesList)
         {
-            if(parkAreaWithService.serviceId===parseInt(serviceid)){                 
-                parkAreas=parkAreaList.find((parkArea)=>parkArea.id===parkAreaWithService.parkAreaId)                
+            if(parkAreaWithService.serviceId===parseInt(serviceElement.dataset.serviceid)){ 
+                for(const parkArea of parkAreaList){
+                    if(parkArea.id===parkAreaWithService.parkAreaId){
+                        parkAreaNames+=`\n${parkArea.name}`
+                    }
+                }
             }
         }
-        let parkAreaNames=""
-        for(const parkArea of parkAreas)
-        {
-            parkAreaNames+=` ${parkArea.name}`
-        }
-        //console.log(`${serviceElement.dataset.type} is available in ${parkAreaNames}`)
-        window.alert(`${serviceElement.dataset.servicename} is available in ${parkAreaNames}`)
+       
+        window.alert(`${serviceElement.dataset.servicename} is available in : ${parkAreaNames}`)
     }
 })
