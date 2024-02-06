@@ -17,7 +17,7 @@ const displayServices=(parkAreaId)=>{
     for(const parkService of parkAreaServicesList){
         if(parkService.parkAreaId===parkAreaId){
             let service=servicesList.find((service)=>service.id===parkService.serviceId)
-            serviceHTML+=`<li data-type="service data-serviceid=${service.id} data-servicename=${service.name}">${service.name}</li>`
+            serviceHTML+=`<li data-type="service" data-serviceid="${service.id}" data-servicename="${service.name}">${service.name}</li>`
         }
     }
 
@@ -41,6 +41,6 @@ document.addEventListener("click",(serviceClickEvent)=>{
             parkAreaNames+=` ${parkArea.name}`
         }
         //console.log(`${serviceElement.dataset.type} is available in ${parkAreaNames}`)
-        window.alert(`${serviceElement.dataset.type} is available in ${parkAreaNames}`)
+        window.alert(`${serviceElement.dataset.servicename} is available in ${parkAreaNames}`)
     }
 })
