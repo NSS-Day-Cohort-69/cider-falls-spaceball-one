@@ -1,6 +1,6 @@
 .header {
     display: flex;
-    border-bottom: solid black 3px;
+    border-bottom: solid red 3px;
     /* justify-content: space-between; */
     flex-direction: row;
     
