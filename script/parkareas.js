@@ -5,14 +5,17 @@ const parks = getParkAreas()
 const guests = getGuests()
 
 export const displayParks = () => {
-let parksHTML = '<section class="park-card">'
+let parksHTML = ""
 for(const park of parks) {
-    parksHTML += `<div class="${park.id}">
-    <h1 data-type="park" data-id="${park.id}">${park.name}</h1>
-    <div>
-    <div>${displayServices(park.id)}</div>`
+    parksHTML += `<div class="eachCard">
+    <div class="${park.name}">
+    <h1 class= "parkTitle" data-type="park" data-id="${park.id}">${park.name}</h1>
+   
+    <div>${displayServices(park.id)}</div>
+    </div>
+    </div>`
     }
-    parksHTML += '</section>'
+    
     return parksHTML
 }
 
