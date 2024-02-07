@@ -109,8 +109,9 @@ const database = {
     parkAreas: [
         {
             id: 1,
-            name: "Chamfort River",
-            location: "Northeast"
+            name: "Lodge",
+            location: "Northwest"
+            
         },
         {
             id: 2,
@@ -119,13 +120,15 @@ const database = {
         },
         {
             id: 3,
-            name: "Lodge",
-            location: "Northwest"
+            name: "Chamfort River",
+            location: "Northeast"
+            
         },
         {
             id: 4,
             name: "Gander River",
             location: "Southwest"
+            
         },
         {
             id: 5,
@@ -136,6 +139,8 @@ const database = {
             id: 6,
             name: "Pine Bluff Trails",
             location: "Southeast"
+            
+            
         }
     ],
     services: [

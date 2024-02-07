@@ -6,14 +6,13 @@ import { getGuests } from './database.js'
 const guests = getGuests()
 
 export const displayGuests = () => {
-    let guestHTML = "<section><h1>Guests</h1>"
+    let guestHTML = `<h1 class="guestTitle">Guests</h1>`
     guestHTML += "<ul>"
 
     for (const guest of guests) {
-        guestHTML += `<li> ${guest.fullName} </li>`
+        guestHTML += `<li class="guestsName"> ${guest.fullName} </li>`
     }
 
     guestHTML += "</ul>"
-    guestHTML += "</section>"
     return guestHTML
 }
