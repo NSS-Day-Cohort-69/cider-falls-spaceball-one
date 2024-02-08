@@ -43,7 +43,7 @@ body {
     font-size: 40px;
     margin-left: -100px;
     text-shadow: 2px 2px 2px white;
-    color: rgb(0, 0, 36)
+    color: rgb(26, 9, 9);
 }
 
 .one {
@@ -65,7 +65,7 @@ body {
 }
 
 .guestsName {
-    color: rgb(0, 0, 36)
+    color: rgb(26, 9, 9);
 }
 
 .allContent {
@@ -109,7 +109,7 @@ body {
     overflow: hidden;
     padding-top: 28px;
     box-shadow: -3px 3px 5px;
-    color: rgb(0, 0, 36)
+    color: rgb(26, 9, 9);
     
 }
 
@@ -124,6 +124,7 @@ body {
     justify-content: space-around;
     border-top: 3px solid black;
     background-color: rgb(255, 184, 84);
+    color: rgb(26, 9, 9);
 }
 
 .bold {
@@ -132,5 +133,6 @@ body {
 
 .guestTitle {
     text-align: center;
+    color: rgb(26, 9, 9);
 }
 
